@@ -1,0 +1,38 @@
+GET http://127.0.0.1:8000/items
+###
+###
+GET http://127.0.0.1:8000/item/1
+###
+###
+POST http://127.0.0.1:8000/items
+Content-Type: application/json
+
+{
+    "id" : 1,
+    "name" : "Milk",
+    "price" : 200,
+    "description" : "nice milk",
+    "on_offer" : false
+}
+###
+###
+PUT http://127.0.0.1:8000/item/1
+Content-Type: application/json
+
+{
+    "id" : 1,
+    "name" : "Milkys",
+    "price" : 2.00,
+    "description" : "nice milkys",
+    "on_offer" : true
+}
+###
+###
+DELETE http://127.0.0.1:8000/item/1
+###
+###
+GET http://127.0.0.1:8000/docs
+###
+###
+GET http://localhost:8000/redoc
+###
